@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SWGTM - Digital Services for Local Business in Bangladesh. From Offline to Online – Fast and Easy">
+    <meta name="keywords" content="digital services, local business, Facebook page, Google maps, website, Bangladesh">
+    <meta name="author" content="SWGTM">
+    <title>SWGTM – Digital Services for Local Business in Bangladesh</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-content">
+                    <div class="logo-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>SWGTM</h2>
+                        <span>Digital Services</span>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#services" class="nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Services</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#services" class="dropdown-link">All Services</a></li>
+                        <li><a href="#services" class="dropdown-link">Business Digitization</a></li>
+                        <li><a href="#services" class="dropdown-link">Digital Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">
+                        <i class="fas fa-star"></i>
+                        <span>Reviews</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="https://wa.me/8801969716508" class="nav-cta" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Get Quote</span>
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Trusted by 100+ Local Businesses</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transform Your Business with 
+                    <span class="highlight">Digital Excellence</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    We help local businesses go online with professional Facebook pages, Google maps optimization, 
+                    stunning websites, and comprehensive digital marketing solutions.
+                </p>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Professional Design</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Start Your Project
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        View Services
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-graphic">
+                    <div class="floating-card card-1">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook Pages</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Google Maps</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-globe"></i>
+                        <span>Websites</span>
+                    </div>
+                    <div class="main-graphic">
+                        <div class="graphic-circle">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About SWGTM</h2>
+                <p>From Offline to Online – Fast and Easy</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>SWGTM is a digital agency that helps local businesses get online and grow. We offer a full range of services like Facebook Page Setup, Google Map Listing, Digital Posters, Business Websites, and Ad Support.</p>
+                    <p>Whether you run a salon, shop, restaurant, or coaching center — we can take your business to the next level.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-graphic">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Complete digital solutions for your business</p>
+            </div>
+            
+            <!-- Business Digitization Services -->
+            <div class="services-category">
+                <h3>🧱 Business Digitization Services</h3>
+                <p class="category-description">Transform your offline business into a digital powerhouse with our comprehensive digitization services.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <h3>📘 Facebook Business Page Creation & Setup</h3>
+                        <p>Professionally create and optimize Facebook pages for local businesses with custom branding, engaging content, and customer interaction features.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Custom Branding</span>
+                            <span class="feature-tag">Content Optimization</span>
+                            <span class="feature-tag">Engagement Setup</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>📍 Google My Business (Map Listing) Setup</h3>
+                        <p>Add your business to Google Maps so customers can find you easily. Complete profile optimization with photos, reviews, and location management.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Profile Creation</span>
+                            <span class="feature-tag">Photo Optimization</span>
+                            <span class="feature-tag">Review Management</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>💬 WhatsApp Business Setup + Auto-Reply</h3>
+                        <p>Set up a business profile with quick replies and catalog integration. Automated responses and professional business communication setup.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Business Profile</span>
+                            <span class="feature-tag">Auto-Reply Setup</span>
+                            <span class="feature-tag">Catalog Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>🎨 Digital Banner, Poster, & Flyer Design</h3>
+                        <p>Custom Canva-based designs for promotions and branding. Professional graphics that capture attention and drive engagement.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Custom Designs</span>
+                            <span class="feature-tag">Brand Consistency</span>
+                            <span class="feature-tag">High Quality</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>🖌️ Logo Design (Basic / Minimal)</h3>
+                        <p>Clean and modern logos for small businesses and brands. Professional designs that represent your business identity effectively.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Modern Design</span>
+                            <span class="feature-tag">Brand Identity</span>
+                            <span class="feature-tag">Scalable Format</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>💳 Business Card Design</h3>
+                        <p>Print-ready business card designs for both physical and digital use. Professional cards that make lasting impressions.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Print Ready</span>
+                            <span class="feature-tag">Digital Version</span>
+                            <span class="feature-tag">Professional Layout</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>🌐 One-Page Business Website</h3>
+                        <p>Simple, fast-loading websites to showcase services and build trust. Mobile-optimized designs that convert visitors into customers.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Fast Loading</span>
+                            <span class="feature-tag">Mobile Optimized</span>
+                            <span class="feature-tag">SEO Ready</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>🧾 Portfolio / Landing Page Design</h3>
+                        <p>Personal or business portfolio pages, optimized for mobile. Showcase your work and attract potential clients effectively.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Portfolio Showcase</span>
+                            <span class="feature-tag">Mobile Optimized</span>
+                            <span class="feature-tag">Lead Generation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-list-alt"></i>
+                        </div>
+                        <h3>📋 Online Price List or Menu Creation</h3>
+                        <p>Beautiful digital menus or price sheets, downloadable and shareable. Professional presentations of your products and services.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Digital Format</span>
+                            <span class="feature-tag">Shareable</span>
+                            <span class="feature-tag">Professional Layout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Digital Marketing Services -->
+            <div class="services-category">
+                <h3>📣 Digital Marketing Services</h3>
+                <p class="category-description">Boost your online presence and reach more customers with our comprehensive digital marketing solutions.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h3>📢 Facebook & Instagram Ad Setup</h3>
+                        <p>Basic paid ad setup to reach more people and promote your services. Strategic targeting and campaign optimization for maximum ROI.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Ad Creation</span>
+                            <span class="feature-tag">Targeting Setup</span>
+                            <span class="feature-tag">Campaign Management</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>🎯 Ad Creative & Visual Design</h3>
+                        <p>Eye-catching ad banners for Facebook and Instagram campaigns. Professional designs that drive clicks and conversions.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Creative Design</span>
+                            <span class="feature-tag">High Converting</span>
+                            <span class="feature-tag">Brand Consistent</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>🗓️ Social Media Post Design (Weekly / Monthly)</h3>
+                        <p>Branded post designs for regular content sharing. Consistent visual identity across all social media platforms.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Regular Content</span>
+                            <span class="feature-tag">Brand Consistency</span>
+                            <span class="feature-tag">Engagement Focused</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <h3>✏️ Caption + Hashtag Research</h3>
+                        <p>Boost your post engagement with optimized text and tags. Strategic content that reaches your target audience effectively.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Engaging Captions</span>
+                            <span class="feature-tag">Hashtag Research</span>
+                            <span class="feature-tag">Audience Targeting</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>⚙️ Facebook & Instagram Profile Optimization</h3>
+                        <p>Clean up and polish social profiles for professional branding. Optimized profiles that attract and engage your target audience.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Profile Cleanup</span>
+                            <span class="feature-tag">Professional Branding</span>
+                            <span class="feature-tag">Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>🔍 Basic SEO Setup for Website</h3>
+                        <p>On-page SEO including meta tags, descriptions, and sitemap. Improve your website's visibility in search engines.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Meta Tags</span>
+                            <span class="feature-tag">Sitemap Creation</span>
+                            <span class="feature-tag">Search Visibility</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>📈 Marketing Strategy & Content Planning</h3>
+                        <p>Help businesses plan monthly content with goals and ideas. Strategic planning for consistent and effective digital marketing.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Strategy Planning</span>
+                            <span class="feature-tag">Content Calendar</span>
+                            <span class="feature-tag">Goal Setting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional CTA Section -->
+            <div class="services-cta">
+                <div class="cta-content">
+                    <h3>Ready to Transform Your Business?</h3>
+                    <p>Get in touch to discuss your project requirements and receive a personalized quote tailored to your business needs.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                        <a href="https://wa.me/8801969716508" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Join hundreds of local businesses that have already taken their operations online with SWGTM. Get started today and see the difference professional digital services can make for your business.</p>
+                    <div class="cta-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Businesses Served</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://wa.me/your-whatsapp-number" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i>
+                        Start Your Project
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-large">
+                        <i class="fas fa-envelope"></i>
+                        Get Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>See our recent work and success stories</p>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p class="subtitle">Don't just take our word for it. Here's what local business owners have to say about working with SWGTM.</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"SWGTM transformed our small restaurant's online presence completely. Our Facebook page now brings in 3x more customers, and the Google My Business setup has made us discoverable to local diners. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Owner, Taste of Home Restaurant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The team at SWGTM created a beautiful website for my salon that perfectly represents my brand. The WhatsApp Business setup with auto-replies has saved me hours every week. Professional service from start to finish!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <span>Owner, Elegance Beauty Salon</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As a local mechanic, I never thought I needed an online presence. SWGTM proved me wrong! Their Facebook ads brought in 50% more customers in just 3 months. The investment paid for itself many times over."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>David Chen</h4>
+                            <span>Owner, Chen's Auto Repair</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The logo design and business card creation exceeded my expectations. SWGTM understood my vision perfectly and delivered a professional brand identity that my customers love. Great attention to detail!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa Thompson</h4>
+                            <span>Founder, Creative Crafts Studio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"SWGTM's social media management has been a game-changer for my bakery. The weekly post designs and hashtag research have increased our Instagram followers by 200%. Sales have never been better!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Amanda Foster</h4>
+                            <span>Owner, Sweet Dreams Bakery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The portfolio website SWGTM created for my photography business is stunning. It's mobile-friendly, loads fast, and showcases my work beautifully. I've booked more clients than ever before!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Park</h4>
+                            <span>Professional Photographer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-cta">
+                <p>Join hundreds of satisfied customers who have transformed their businesses with SWGTM</p>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Success Story
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="subtitle">Ready to transform your business? Let's discuss your digital needs and create a customized solution for your success.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>Quick responses and instant support</p>
+                            <a href="https://wa.me/your-whatsapp-number" class="contact-link">
+                                <i class="fas fa-arrow-right"></i>
+                                Start Chat
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Detailed project discussions and quotes</p>
+                            <a href="mailto:aiswagotom@gmail.com" class="contact-link">
+                                <i class="fas fa-arrow-right"></i>
+                                Send Email
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Response Time</h3>
+                            <p>We typically respond within 2-4 hours</p>
+                            <span class="contact-note">Available 7 days a week</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Service Area</h3>
+                            <p>We serve businesses worldwide</p>
+                            <span class="contact-note">Remote digital services available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Send Us a Message</h3>
+                        <p>Tell us about your project and we'll get back to you with a customized solution.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business">Business Name</label>
+                            <input type="text" id="business" name="business">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="facebook-page">Facebook Business Page</option>
+                                <option value="google-business">Google My Business</option>
+                                <option value="whatsapp-business">WhatsApp Business</option>
+                                <option value="design-services">Design Services</option>
+                                <option value="website">Website Development</option>
+                                <option value="social-media">Social Media Marketing</option>
+                                <option value="ads">Facebook/Instagram Ads</option>
+                                <option value="seo">SEO Services</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-500">Under $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2000">$1,000 - $2,000</option>
+                                <option value="2000-5000">$2,000 - $5,000</option>
+                                <option value="over-5000">Over $5,000</option>
+                                <option value="discuss">Let's discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for digital marketing tips
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/8801969716508" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SWGTM</h3>
+                    <p>From Offline to Online – Fast and Easy</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/8801XXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Facebook Page Setup</a></li>
+                        <li><a href="#services">Google Business Profile</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +8801969716508</p>
+                    <p><i class="fas fa-envelope"></i> aiswagotom@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SWGTM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolio-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="Portfolio Image">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel (Hidden by default) -->
+    <div class="admin-panel" id="admin-panel">
+        <div class="admin-toggle" id="admin-toggle">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="admin-content">
+            <h3>Add Portfolio Item</h3>
+            <form id="admin-form">
+                <div class="form-group">
+                    <input type="text" id="admin-title" placeholder="Project Title" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="admin-description" placeholder="Project Description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="url" id="admin-image" placeholder="Image URL" required>
+                </div>
+                <div class="form-group">
+                    <select id="admin-category" required>
+                        <option value="">Select Category</option>
+                        <option value="facebook">Facebook Page</option>
+                        <option value="google">Google Map Listing</option>
+                        <option value="poster">Banner/Poster</option>
+                        <option value="website">Website</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Item</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
